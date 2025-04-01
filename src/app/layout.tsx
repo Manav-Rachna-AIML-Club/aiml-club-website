@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
+import { SanityLive } from "@/sanity/lib/live";
 
 export const metadata: Metadata = {
   title: "MRAC",
@@ -19,6 +20,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+        <SanityLive/>
       </body>
     </html>
   );

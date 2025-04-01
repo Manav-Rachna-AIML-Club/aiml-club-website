@@ -10,6 +10,8 @@ type TeamCardProps = {
 export default function TeamCard({
     name, position, image, gitHubLink, linkedInLink
 }: TeamCardProps) {
+
+    console.log(image);
     return (
         <div className="card w-full bg-gray-100 shadow-md">
             {/* <figure className="px-10 pt-10"> */}
